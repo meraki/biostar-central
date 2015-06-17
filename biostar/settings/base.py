@@ -394,7 +394,7 @@ GOOGLE_TRACKER = ""
 GOOGLE_DOMAIN = ""
 
 # The site logo.
-SITE_LOGO = "biostar2.logo.png"
+SITE_LOGO = "logo-miles-color-450x450.gif"
 
 # Digest title
 DAILY_DIGEST_TITLE = '[biostar daily digest] %s'

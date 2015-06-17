@@ -87,16 +87,6 @@
 
     <div class="col-md-12" id="navbar">
 
-        <div class="col-lg-3 visible-lg" id="logo">
-            <a href="/"><img src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
-        </div>
-
-        <div class="col-md-3 visible-md text-center">
-            <a href="/">
-                <a href="/"><img style="width:200px; height: auto;" src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
-            </a>
-        </div>
-
         {% if user.is_authenticated %}
 
             <div class="col-md-12 top {% active 'userprofile' topic %}">
@@ -111,6 +101,16 @@
             </div>
 
             <div class="header-block">
+
+			<div class="col-lg-2 visible-lg" id="logo">
+			    <a href="/"><img style="height:45px;" src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
+			</div>
+
+			<div class="col-md-2 visible-md text-center">
+			    <a href="/">
+				<a href="/"><img style="height:45px;" src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
+			    </a>
+			</div>
 		    <div class="col-sm-1 mid {% current request 'user-list' %}">
 			<a href="{% url 'user-list' %}">
 			    <div><i class="fa fa-globe"></i>
@@ -186,6 +186,16 @@
             </div>
 
             <div class="header-block">
+
+			<div class="col-lg-2 visible-lg" id="logo">
+			    <a href="/"><img style="height:45px;" src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
+			</div>
+
+			<div class="col-md-2 visible-md text-center">
+			    <a href="/">
+				<a href="/"><img style="height:45px;" src="{{ STATIC_URL }}{{ SITE_LOGO }}"></a>
+			    </a>
+			</div>
 		    <div class="col-md-2 col-md-offset-10 mid {% current request 'user-list' %}">
 			<a href="{% url 'user-list' %}">
 			    <div><i class="fa fa-globe"></i>
