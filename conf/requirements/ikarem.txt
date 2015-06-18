@@ -4,7 +4,7 @@
 # deployment. We are listing the most commonly
 # used packages.
 # redis
-# pyelasticsearch
+pyelasticsearch
 psycopg2
 # gunicorn
 # whitenoise
