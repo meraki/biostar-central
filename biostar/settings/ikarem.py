@@ -26,3 +26,5 @@ HAYSTACK_CONNECTIONS = {
         'INDEX_NAME': 'biostar',
     },
 }
+
+SOCIALACCOUNT_PROVIDERS = {}
