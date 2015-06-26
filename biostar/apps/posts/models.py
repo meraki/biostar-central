@@ -132,7 +132,7 @@ class Post(models.Model):
 
     # Post statuses.
     PENDING, OPEN, CLOSED, DELETED = range(4)
-    STATUS_CHOICES = [(PENDING, "Pending"), (OPEN, "Open"), (CLOSED, "Closed"), (DELETED, "Deleted")]
+    STATUS_CHOICES = [(PENDING, "Pending"), (OPEN, "Open"), (CLOSED, "On Hold"), (DELETED, "Deleted")]
 
     # Question types. Answers should be listed before comments.
     QUESTION, ANSWER, JOB, FORUM, PAGE, BLOG, COMMENT, DATA, TUTORIAL, BOARD, TOOL, NEWS = range(12)
