@@ -32,3 +32,15 @@ NAVBAR_TAGS = []
 POST_TAG_LIST = NAVBAR_TAGS
 
 SOCIALACCOUNT_PROVIDERS = {}
+
+if get_env("PRODUCTION_MODE") == "true":
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = '127.0.0.1'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = 'biostar'
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'ask-no-reply@meraki.com'
